@@ -380,7 +380,7 @@ export default function CarBuyoutLanding() {
                   <div>
                     <h3 className="text-xl sm:text-2xl font-bold text-white mb-1">Битые</h3>
                     <p className="text-red-300 text-lg sm:text-xl">Сильные повреждения</p>
-                    <p className="text-slate-300 mt-2">Выкупаем даже "безнадежные"</p>
+                    <p className="text-slate-300 mt-2">Выкупаем даже &#34;безнадежные&#34;</p>
                   </div>
                 </div>
               </div>
@@ -541,7 +541,7 @@ export default function CarBuyoutLanding() {
                           <blockquote className={`text-white mb-4 font-light italic flex-grow ${
                               isCenter ? "text-lg sm:text-xl" : "text-base sm:text-lg"
                           }`}>
-                            "{testimonial.text}"
+                            &#34;{testimonial.text}&#34;
                           </blockquote>
                           <cite className={`${isCenter ? "text-teal-300" : "text-teal-400/80"} font-medium text-sm sm:text-base`}>
                             — {testimonial.author}
