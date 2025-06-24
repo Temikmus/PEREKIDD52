@@ -11,9 +11,8 @@ const geistMono = Geist_Mono({
     subsets: ["latin"],
 });
 
-// Новый экспорт для viewport
 export const viewport = {
-    themeColor: "#0f172a", // Цвет как в вашем gradient-slate-900
+    themeColor: "#0f172a",
     width: 'device-width',
     initialScale: 1,
     maximumScale: 1,
@@ -22,9 +21,9 @@ export const viewport = {
 export const metadata = {
     title: "АвтоВыкуп - срочный выкуп авто по всей РФ",
     description: "Максимальная цена, минимум хлопот – выкупим ваше авто за 30 минут. Бесплатная оценка, выезд специалиста, любые состояния.",
-    metadataBase: new URL('https://autobuyout.vercel.app'),
+    metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://autobuyout.vercel.app'),
 
-    // Полная настройка иконок
+    // Иконки (пути из public/)
     icons: {
         icon: [
             { url: '/favicon.ico' },
@@ -41,15 +40,14 @@ export const metadata = {
         ]
     },
 
-    // OpenGraph для соцсетей
     openGraph: {
         title: "АвтоВыкуп - срочный выкуп авто по всей РФ",
         description: "Максимальная цена, минимум хлопот – выкупим ваше авто за 30 минут.",
-        url: "https://autobuyout.vercel.app",
+        url: "/",
         siteName: "АвтоВыкуп",
         images: [
             {
-                url: "/og-image.jpg",
+                url: '/og-image.jpg', // Файл в public/og-image.jpg
                 width: 1200,
                 height: 630,
                 alt: 'АвтоВыкуп - срочный выкуп авто',
@@ -59,22 +57,18 @@ export const metadata = {
         type: "website",
     },
 
-    // Twitter Card
     twitter: {
         card: "summary_large_image",
         title: "АвтоВыкуп - срочный выкуп авто по всей РФ",
         description: "Максимальная цена, минимум хлопот – выкупим ваше авто за 30 минут.",
-        images: ["/og-image.jpg"],
+        images: ['/og-image.jpg'], // Файл в public/og-image.jpg
     },
 
-    // PWA настройки
     manifest: "/manifest.json",
-    authors: [{ name: "АвтоВыкуп", url: "https://autobuyout.vercel.app" }],
-
-    // Дополнительные мета-теги
+    authors: [{ name: "АвтоВыкуп", url: "/" }],
     keywords: ["выкуп авто", "срочный выкуп автомобилей", "продать авто быстро", "оценка автомобиля"],
     alternates: {
-        canonical: "https://autobuyout.vercel.app",
+        canonical: "/",
     },
     robots: {
         index: true,
@@ -89,15 +83,19 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+    const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://autobuyout.vercel.app';
+
     return (
         <html lang="ru">
         <head>
-            {/* Дополнительные теги для Safari */}
+            {/* Динамические URL-адреса */}
+            <link rel="canonical" href={baseUrl} />
+            <meta property="og:url" content={baseUrl} />
+
+            {/* PWA-настройки */}
             <meta name="apple-mobile-web-app-capable" content="yes" />
             <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
             <meta name="apple-mobile-web-app-title" content="АвтоВыкуп" />
-
-            {/* Для Android */}
             <meta name="mobile-web-app-capable" content="yes" />
             <meta name="application-name" content="АвтоВыкуп" />
             <meta name="msapplication-TileColor" content="#0f172a" />
