@@ -22,7 +22,7 @@ export const viewport = {
 export const metadata = {
     title: "АвтоВыкуп - срочный выкуп авто по всей РФ",
     description: "Максимальная цена, минимум хлопот – выкупим ваше авто за 30 минут. Бесплатная оценка, выезд специалиста, любые состояния.",
-    metadataBase: new URL('https://autobuyout.vercel.app'),
+    metadataBase: new URL('https://www.auto-vykup-rf.ru'),
 
     // Полная настройка иконок
     icons: {
