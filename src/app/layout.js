@@ -49,7 +49,7 @@ export const metadata = {
         siteName: "АвтоВыкуп",
         images: [
             {
-                url: "/og-image.jpg",
+                url: "/social-image.jpg",
                 width: 1200,
                 height: 630,
                 alt: 'АвтоВыкуп - срочный выкуп авто',
@@ -64,7 +64,7 @@ export const metadata = {
         card: "summary_large_image",
         title: "АвтоВыкуп - срочный выкуп авто по всей РФ",
         description: "Максимальная цена, минимум хлопот – выкупим ваше авто за 30 минут.",
-        images: ["/og-image.jpg"],
+        images: ["/social-image.jpg"],
     },
 
     // PWA настройки
