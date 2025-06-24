@@ -1,4 +1,6 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {};
-
+const nextConfig = {
+    experimental: {
+        optimizeCss: false, // Отключает агрессивную оптимизацию CSS
+    },
+};
 export default nextConfig;
