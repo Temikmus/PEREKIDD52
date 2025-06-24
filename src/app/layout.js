@@ -90,21 +90,13 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
     return (
-        <html lang="ru">
+        <html lang="ru" className={`${geistSans.variable} ${geistMono.variable}`}>
         <head>
-            {/* Дополнительные теги для Safari */}
-            <meta name="apple-mobile-web-app-capable" content="yes" />
-            <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-            <meta name="apple-mobile-web-app-title" content="АвтоВыкуп" />
-
-            {/* Для Android */}
-            <meta name="mobile-web-app-capable" content="yes" />
-            <meta name="application-name" content="АвтоВыкуп" />
-            <meta name="msapplication-TileColor" content="#0f172a" />
+            <meta name="viewport" content={viewport} />
+            <link rel="manifest" href="/manifest.json" />
+            <meta name="theme-color" content="#0f172a" />
         </head>
-        <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        {children}
-        </body>
+        <body>{children}</body>
         </html>
     );
 }
