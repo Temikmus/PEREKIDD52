@@ -22,7 +22,7 @@ export const viewport = {
 export const metadata = {
     title: "АвтоВыкуп - срочный выкуп авто по всей РФ",
     description: "Максимальная цена, минимум хлопот – выкупим ваше авто за 30 минут. Бесплатная оценка, выезд специалиста, любые состояния.",
-    metadataBase: new URL('https://autobuyout.vercel.app/'),
+    metadataBase: new URL('https://auto-vykup-rf.ru/'),
 
     // Полная настройка иконок
     icons: {
@@ -45,7 +45,7 @@ export const metadata = {
     openGraph: {
         title: "АвтоВыкуп - срочный выкуп авто по всей РФ",
         description: "Максимальная цена, минимум хлопот – выкупим ваше авто за 30 минут.",
-        url: "https://autobuyout.vercel.app/",
+        url: "https://auto-vykup-rf.ru/",
         siteName: "АвтоВыкуп",
         images: [
             {
@@ -69,12 +69,12 @@ export const metadata = {
 
     // PWA настройки
     manifest: "/manifest.json",
-    authors: [{ name: "АвтоВыкуп", url: "https://autobuyout.vercel.app/" }],
+    authors: [{ name: "АвтоВыкуп", url: "https://auto-vykup-rf.ru/" }],
 
     // Дополнительные мета-теги
     keywords: ["выкуп авто", "срочный выкуп автомобилей", "продать авто быстро", "оценка автомобиля"],
     alternates: {
-        canonical: "https://autobuyout.vercel.app/",
+        canonical: "https://auto-vykup-rf.ru/",
     },
     robots: {
         index: true,
