@@ -11,9 +11,9 @@ const geistMono = Geist_Mono({
     subsets: ["latin"],
 });
 
-// Новый экспорт для viewport
+// Корректный экспорт viewport (Next.js 14+)
 export const viewport = {
-    themeColor: "#0f172a", // Цвет как в вашем gradient-slate-900
+    themeColor: "#0f172a",
     width: 'device-width',
     initialScale: 1,
     maximumScale: 1,
@@ -92,7 +92,7 @@ export default function RootLayout({ children }) {
     return (
         <html lang="ru" className={`${geistSans.variable} ${geistMono.variable}`}>
         <head>
-            <meta name="viewport" content={viewport} />
+            {/* УДАЛИТЕ строку с meta viewport - он автоматически вставится из экспорта */}
             <link rel="manifest" href="/manifest.json" />
             <meta name="theme-color" content="#0f172a" />
         </head>
