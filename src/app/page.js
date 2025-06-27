@@ -18,6 +18,7 @@ import {
   CheckCircle,
   Star,
   ArrowRight,
+  FileText,
   MapPin,
   Mail,
   Send,
@@ -346,11 +347,11 @@ export default function CarBuyoutLanding() {
               <div className="bg-gradient-to-br from-blue-500/10 to-indigo-600/10 backdrop-blur-lg border border-blue-400/20 rounded-3xl p-6 hover:scale-[1.02] transition-all duration-300 cursor-pointer group">
                 <div className="flex items-start space-x-4">
                   <div className="flex-shrink-0 w-12 h-12 sm:w-14 sm:h-14 bg-gradient-to-br from-blue-400 to-indigo-500 rounded-2xl flex items-center justify-center group-hover:rotate-12 transition-transform duration-300">
-                    <CreditCard className="h-6 w-6 text-white" />
+                    <FileText  className="h-6 w-6 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-lg sm:text-xl font-bold text-white mb-1">Кредитные</h3>
-                    <p className="text-blue-300">Поможем с банком</p>
+                    <h3 className="text-lg sm:text-xl font-bold text-white mb-1">Без документов</h3>
+                    <p className="text-blue-300">Примем в разбор</p>
                   </div>
                 </div>
               </div>
@@ -372,29 +373,29 @@ export default function CarBuyoutLanding() {
             {/* Второй ряд - растянутые карточки */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8 sm:mb-12">
               {/* Карточка 4 - растянутая */}
-              <div className="bg-gradient-to-br from-red-500/10 to-rose-600/10 backdrop-blur-lg border border-red-400/20 rounded-3xl p-6 hover:scale-[1.02] transition-all duration-300 cursor-pointer group">
-                <div className="flex items-center space-x-6">
-                  <div className="flex-shrink-0 w-16 h-16 bg-gradient-to-br from-red-400 to-rose-500 rounded-2xl flex items-center justify-center group-hover:rotate-12 transition-transform duration-300">
-                    <Car className="h-8 w-8 text-white" />
+              <div className="bg-gradient-to-br from-red-500/10 to-rose-600/10 backdrop-blur-lg border border-red-400/20 rounded-3xl p-4 sm:p-6 hover:scale-[1.02] transition-all duration-300 cursor-pointer group">
+                <div className="flex items-center space-x-4 sm:space-x-6">
+                  <div className="flex-shrink-0 w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br from-red-400 to-rose-500 rounded-2xl flex items-center justify-center group-hover:rotate-12 transition-transform duration-300">
+                    <Car className="h-6 w-6 sm:h-8 sm:w-8 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-xl sm:text-2xl font-bold text-white mb-1">Битые</h3>
-                    <p className="text-red-300 text-lg sm:text-xl">Сильные повреждения</p>
-                    <p className="text-slate-300 mt-2">Выкупаем даже &#34;безнадежные&#34;</p>
+                    <h3 className="text-lg sm:text-2xl font-bold text-white mb-1">Битые</h3>
+                    <p className="text-red-300 text-base sm:text-xl">Сильные повреждения</p>
+                    <p className="text-slate-300 mt-2 hidden sm:block">Выкупаем даже &#34;безнадежные&#34;</p>
                   </div>
                 </div>
               </div>
 
-              {/* Карточка 5 - растянутая */}
-              <div className="bg-gradient-to-br from-gray-500/10 to-slate-600/10 backdrop-blur-lg border border-gray-400/20 rounded-3xl p-6 hover:scale-[1.02] transition-all duration-300 cursor-pointer group">
-                <div className="flex items-center space-x-6">
-                  <div className="flex-shrink-0 w-16 h-16 bg-gradient-to-br from-gray-400 to-slate-500 rounded-2xl flex items-center justify-center group-hover:rotate-12 transition-transform duration-300">
-                    <Shield className="h-8 w-8 text-white" />
+              {/* Карточка 5 - растянутая (адаптированная) */}
+              <div className="bg-gradient-to-br from-gray-500/10 to-slate-600/10 backdrop-blur-lg border border-gray-400/20 rounded-3xl p-4 sm:p-6 hover:scale-[1.02] transition-all duration-300 cursor-pointer group">
+                <div className="flex items-center space-x-4 sm:space-x-6">
+                  <div className="flex-shrink-0 w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br from-gray-400 to-slate-500 rounded-2xl flex items-center justify-center group-hover:rotate-12 transition-transform duration-300">
+                    <Shield className="h-6 w-6 sm:h-8 sm:w-8 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-xl sm:text-2xl font-bold text-white mb-1">Запретные</h3>
-                    <p className="text-gray-300 text-lg sm:text-xl">Сложные случаи</p>
-                    <p className="text-slate-300 mt-2">Наша специализация</p>
+                    <h3 className="text-lg sm:text-2xl font-bold text-white mb-1">Запретные</h3>
+                    <p className="text-gray-300 text-base sm:text-xl">Сложные случаи</p>
+                    <p className="text-slate-300 mt-2 hidden sm:block">Наша специализация</p>
                   </div>
                 </div>
               </div>
