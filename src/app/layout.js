@@ -92,7 +92,10 @@ export default function RootLayout({ children }) {
     return (
         <html lang="ru" className={`${geistSans.variable} ${geistMono.variable}`}>
         <head>
-            {/* УДАЛИТЕ строку с meta viewport - он автоматически вставится из экспорта */}
+            {/* Существующие теги */}
+            <link rel="icon" href="/favicon.ico" sizes="any" />
+            <link rel="icon" href="/icon-192x192.png" type="image/png" />
+            <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
             <link rel="manifest" href="/manifest.json" />
             <meta name="theme-color" content="#0f172a" />
         </head>
