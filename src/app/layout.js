@@ -1,4 +1,5 @@
 import { Geist, Geist_Mono } from "next/font/google";
+import YandexMetrika from '@/components/YandexMetrika';
 import "./globals.css";
 
 const geistSans = Geist({
@@ -98,6 +99,7 @@ export default function RootLayout({ children }) {
             <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
             <link rel="manifest" href="/manifest.json" />
             <meta name="theme-color" content="#0f172a" />
+            <YandexMetrika />
         </head>
         <body>{children}</body>
         </html>
